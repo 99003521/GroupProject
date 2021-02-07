@@ -10,10 +10,12 @@ class MyStack {
   int m_maxlen;
   
   public:
-  MyStack():m_arr(),m_top(0),m_maxlen(max_size){
+  MyStack():m_arr(),m_top(0),m_maxlen(max_size)
+  {
 
   }
-  MyStack(T len):m_arr(),m_top(0),m_maxlen(len){
+  MyStack(T len):m_arr(),m_top(0),m_maxlen(len)
+  {
 
   }
   void push(T val);
