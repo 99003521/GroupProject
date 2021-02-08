@@ -8,7 +8,6 @@ TEST(Distance, Addition) {
 	EXPECT_EQ(5, d3.getfeets());
 	EXPECT_EQ(6, d3.getinches());
 }
-
 TEST(Distance, Difference) {
 	Distance d1(15, 7);
 	Distance d2(10, 6);
