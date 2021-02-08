@@ -18,8 +18,6 @@ class Currency {
   bool operator<(const Currency&);
   bool operator>  (const Currency&);
   void dispay() const;
-
-
   int getRupee() const;
   int getPaise() const;
   // friend std::ostream& operator<<(const std::ostream&, const Currency&); ---not in the image
