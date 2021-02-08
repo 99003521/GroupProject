@@ -9,10 +9,3 @@ TEST(MyArray,Parameterised_Constructor)
     EXPECT_EQ(7,p.sum());
 }
 
-TEST(MyArray, Empty_Cosnstructor) {
-     MyArray <int> p(5);
-     p.append(6)
-     p.append(2)
-     EXPECT_EQ(20,P.sum());
-}
-  
