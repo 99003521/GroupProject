@@ -1,6 +1,6 @@
 #ifndef __EMPLOYEE_H
 #define __EMPLOYEE_H
-
+#include<string>
 class IEmployee {
   public:
   virtual void payroll()=0;
@@ -15,7 +15,7 @@ class Employee:public IEmployee {
   public:
   Employee(std::string id, std::string name, double salary,int exp);
   virtual void display();
-}
+  int salary();
+};
 
 #endif
-  
