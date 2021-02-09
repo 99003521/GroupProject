@@ -70,7 +70,7 @@ string Book::getAuth(){
     return this->auth;
 }
 /**
- * @brief Member function for number of pages
+ * @brief Member function for number of pages of a book
  * 
  * @return int 
  */
