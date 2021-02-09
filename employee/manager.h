@@ -2,7 +2,7 @@
 #define __MANAGER_H
 
 #include "employee.h"
-
+#include<iostream>
 class Manager : public Employee {
   int m_projCode;
   int m_reportees;

@@ -2,7 +2,7 @@
 #define __TRAINEE_H
 
 #include "employee.h"
-
+#include<iostream>
 class Trainee : public Employee {
   std::string m_track;
   double score;
