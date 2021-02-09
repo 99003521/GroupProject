@@ -32,7 +32,10 @@ namespace {
         library.add(b1);
         library.add(b2);
         b1.displayE();
-        // EXPECT_EQ("",b1.getId());
+        
+        
+        
+
         EXPECT_EQ("Book1\nBook2\n",l.display());
         
     }
@@ -48,3 +51,5 @@ namespace {
         EXPECT_EQ("Book1\nBook2\n",l.display());
 }
 
+    
+    
