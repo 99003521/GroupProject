@@ -8,12 +8,20 @@
 namespace {
     TEST(Test, Addition) {
         
-        fstream fin;
         string myText;
         ifstream MyReadFile("info.csv");
         while (getline (MyReadFile, myText)){
         // Output the text from the file
         cout << myText;
+        }
+        vector<string> v;
+ 
+        stringstream ss(myText);
+ 
+        while (ss.good()) {
+            string substr;
+            getline(ss, substr, ',');
+            v.push_back(substr);
         }
         MyReadFile.close();
 
