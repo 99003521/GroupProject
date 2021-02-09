@@ -1,9 +1,21 @@
 #include "book.h"
 #include "library.h"
 #include <gtest/gtest.h>
+#include <iostream>
+#include <fstream>
+#include <string.h>
 
 namespace {
     TEST(Test, Addition) {
+        
+        fstream fin;
+        string myText;
+        ifstream MyReadFile("info.csv");
+        while (getline (MyReadFile, myText)){
+        // Output the text from the file
+        cout << myText;
+        }
+        MyReadFile.close();
 
         Book b1(1,"Book1");
         Book b2(2,"Book2");
