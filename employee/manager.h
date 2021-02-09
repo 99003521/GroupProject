@@ -3,6 +3,8 @@
 
 #include "employee.h"
 #include<iostream>
+#include<string>
+
 class Manager : public Employee {
   int m_projCode;
   int m_reportees;

@@ -3,6 +3,7 @@
 
 #include "employee.h"
 #include<iostream>
+#include<string>
 class Engineer : public Employee {
   int m_projCode;
   public:
