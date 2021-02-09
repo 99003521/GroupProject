@@ -14,7 +14,11 @@ class Book{
     Book(int,string);
     void update();
     void display();
+    string displayE();
     int getId();
     string getName();
+    string getAuth();
+    int getPages();
+    int getPrice();
 };
 #endif

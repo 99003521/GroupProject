@@ -13,12 +13,13 @@ void Library::add(Book ref){
     V.push_back(ref);
 }
 void Library::remove(Book ref){
-    // List.erase(ref);
+    // V.erase(ref);
 }
 string Library::display(){
     string str;
-    for (auto i = V.begin(); i != V.end(); ++i) 
-        cout << *i << " "; 
-    cout<<"\n\n";
+    for (int i=0;i<V.size(); ++i){
+        cout<<(V.at(i)).getName()<<"\n";
+        str+=(V.at(i)).getName()+"\n";
+    }
     return str;
 }
