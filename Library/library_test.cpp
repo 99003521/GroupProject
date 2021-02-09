@@ -33,10 +33,7 @@ namespace {
         library.add(b2);
         b1.displayE();
         
-        
-        
-
-        EXPECT_EQ("Book1\nBook2\n",l.display());
+   EXPECT_EQ("Book1\nBook2\n",l.display());
         
     }
 
