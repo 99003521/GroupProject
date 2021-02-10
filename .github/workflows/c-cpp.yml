@@ -20,6 +20,6 @@ jobs:
     - name: gtest
       run:  sudo apt get install libgtest-dev && sudo apt-get install cmake && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo cp *.a/usr/lib
     - name: make run
-      run:  make all -C Lbrary/
+      run:  make -C Lbrary/
       
       
