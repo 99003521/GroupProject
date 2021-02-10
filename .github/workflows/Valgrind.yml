@@ -2,9 +2,9 @@ name: Valgrind
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -20,5 +20,5 @@ jobs:
     - name: make test
       run: |
         make test -C library/
-        valgrind ./library/Test_LM.out
+        valgrind ./library/.out
         
