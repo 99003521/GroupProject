@@ -17,36 +17,38 @@ namespace {
         }
         MyReadFile.close();
 
-        library b1(1,"Book1");
-        library b2(2,"Book2");
-        library.add(b1);
-        library.add(b2);
+        Book b1(1,"Book1");
+        Book b2(2,"Book2");
+        // Library.add(b1);
+        // Library.add(b2);
         EXPECT_EQ(1,b1.getId());
         EXPECT_EQ("Book1",b1.getName());
         
     }
     TEST(Test, Display) {
 
-        library b1(1,"Book1");
-        library b2(2,"Book2");
-        library.add(b1);
-        library.add(b2);
-        b1.displayE();
-        
-   EXPECT_EQ("Book1\nBook2\n",l.display());
+        Book b1(1,"Book1");
+        Book b2(2,"Book2");
+        Library lib;
+        lib.add(b1);
+        lib.add(b2);
+        b1.displayBook();     
+        EXPECT_EQ("Book1\nBook2\n",lib.display());
         
     }
 
     TEST(Test, remove) {
 
-        library b1(1,"Book1");
-        library b2(2,"Book2");
-        library.remove(b1);
-        library.remove(b2);
+        Book b1(1,"Book1");
+        Book b2(2,"Book2");
+        Library lib2;
+        lib2.add(b1);
+        lib2.add(b2);
+
+        lib2.remove(b1);
+        lib2.remove(b2);
         b1.displayE();
         // EXPECT_EQ("",b1.getId());
-        EXPECT_EQ("Book1\nBook2\n",l.display());
+        EXPECT_EQ("",lib2.display());
 }
-
-    
-    
+}
