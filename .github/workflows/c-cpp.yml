@@ -13,7 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make all
-      run:  make all -C library/
+    - name: build-essential
+      run:  sudo apt-get install build-essential
+      name: cmake -install
+      run: sudo apt-get install cmake
+      name: gtest
+      run: udo apt get install libgtest-dev && sudo apt-get install cmake && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo cp *.a/usr/lib
+      name: make run
+      run:  make all -C Lbrary/
       
       
