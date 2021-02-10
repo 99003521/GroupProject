@@ -35,11 +35,11 @@ namespace {
             Book temp(x,readL.at(1));
             l.add(temp);
         }
-        l.display();
+        
         // MyReadFile.close();
         
         MyReadFile.close();
-
+        l.display();
         Book b1(1,"Book1","Aman",200,1500);
         Book b2(2,"Book2","RK",300,1450);
         Book b3(3,"Book3","Aishwarya",350,1750);
