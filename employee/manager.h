@@ -10,8 +10,8 @@ class Manager : public Employee {
   int m_reportees;
   public:
   Manager(std::string id, std::string name, double salary,int exp,int code,int reprtees);
-  void payroll();
-  void appraisal();
+  int payroll();
+  int appraisal();
   void display();
 };
 

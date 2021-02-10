@@ -8,8 +8,8 @@ class Trainee : public Employee {
   double score;
   public:
  Trainee(std::string id, std::string name, double salary,int exp,int code,int reprtees);
-  void payroll();
-  void appraisal();
+  int payroll();
+  int appraisal();
   void display();
   int getScore();
 };

@@ -24,28 +24,30 @@ int Employee::salary()
     return m_salary;
 }
 
-void Manager::payroll(){
+int Manager::payroll(){
     int paym = salary();//currency
     cout<<paym<<endl;
+    return paym;
 }
 
-void Manager::appraisal(){
+int Manager::appraisal(){
     int paym = salary();
     int appr = 0.15*paym;
     cout<<appr<<endl;
+    return appr;
     
 }
 
-void Trainee::payroll(){
-    int paym = salary();
-    cout<<paym<<endl;
+// void Trainee::payroll(){
+//     int paym = salary();
+//     cout<<paym<<endl;
     
-}
+// }
 int Trainee::getScore(){
     return score;
 }
 
-void Trainee::appraisal(){
+int Trainee::appraisal(){
     int paym = salary();
     int appr=0;
     if (getScore()>50)
@@ -53,6 +55,7 @@ void Trainee::appraisal(){
     else
         appr = 0;
     cout<<appr<<endl;
+    return appr;
     
 }
 

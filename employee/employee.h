@@ -3,8 +3,8 @@
 #include<string>
 class IEmployee {
   public:
-  virtual void payroll()=0;
-  virtual void appraisal()=0;
+  virtual int payroll()=0;
+  virtual int appraisal()=0;
 };
 
 class Employee:public IEmployee {
