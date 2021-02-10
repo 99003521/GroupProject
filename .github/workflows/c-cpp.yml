@@ -18,7 +18,7 @@ jobs:
     - name: cmake -install
       run:  sudo apt-get install cmake
     - name: gtest
-      run:  sudo apt-get install libgtest-dev && sudo apt-get install cmake && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make && sudo cp *.a/usr/lib
+      run:  sudo apt-get install libgtest-dev && sudo apt-get install cmake && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make && sudo cp * .a/usr/lib
     - name: make run
       run:  make -C Lbrary/
       
