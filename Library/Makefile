@@ -10,3 +10,9 @@ $(PROJECT_NAME) : $(SRC)
 
 run:$(PROJECT_NAME)
 	./$^.out
+
+memcheck:$(PROJECT_NAME)
+	valgrind ./$^.out
+
+analyse:$(SRC)
+	cppcheck $(SRC)
