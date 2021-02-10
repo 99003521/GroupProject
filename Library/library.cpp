@@ -16,6 +16,7 @@
 #include <fstream> 
 #include<vector>
 #include<string>
+#include "library.h"
 
 // fstream fin;
 
@@ -46,8 +47,7 @@ void Library::remove(Book ref){
 string Library::display(){
     string str;
     for (int i=0;i<V.size(); ++i){
-        cout<<(V.at(i)).getName()<<"\n";
-        str+=(V.at(i)).getName()+"\n";
+        V.at(i).displayBook();
     }
     return str;
 }

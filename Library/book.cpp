@@ -11,6 +11,7 @@
  * @copyright Copyright (c) 2021
  * 
  */
+#include "book.h"
 #include<iostream>
 /**
  * @brief Construct a new Book:: Book object
@@ -29,7 +30,7 @@ Book::Book():id(0),price(0),name(NULL),auth(NULL),pages(0){}
  * @param p 
  * @param pa 
  */
-Book::Book(int i,string n,string a,int p, int pa):id(i),name(n),auth(a),price(0),pages(p){}
+Book::Book(int i,string n,string a,int p, int pa):id(i),name(n),auth(a),price(pa),pages(p){}
 /**
  * @brief Construct a new Book:: Book object
  * Constr
@@ -90,8 +91,18 @@ int Book::getPrice(){
  * 
  * @return string 
  */
+// string Book::display(){
+//     string dis="\nBook id: "+to_string(this->id)+"\nName: "+this->name+"\nAuthor: "+this->auth+"\nPages: "+to_string(this->pages)+"\nPrice: "+to_string(this->price)+"\n";
+//     cout<<dis;
+//     return dis;
+// }
 string Book::displayE(){
-    string dis="Book: "+to_string(this->id)+"\nName: "+this->name+"\nAuthor: "+this->auth+"\nPages: "+to_string(this->pages)+"\nPrice: \n"+to_string(this->price);
+    string dis="\nBook id: "+to_string(this->id)+"\nName: "+this->name+"\nAuthor: "+this->auth+"\nPages: "+to_string(this->pages)+"\nPrice: "+to_string(this->price)+"\n";
+    cout<<dis;
+    return dis;
+}
+string Book::displayBook(){
+    string dis="\nBook id: "+to_string(this->id)+"\nName: "+this->name+"\n";
     cout<<dis;
     return dis;
 }

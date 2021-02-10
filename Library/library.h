@@ -18,6 +18,8 @@ class Library{
     // friend ostream &operator<<();
     string display();
     void remove(Book);
-    void add(Book);    
+    void add(Book);
+    void clr();
+    // void readLib(string);
 };
 #endif

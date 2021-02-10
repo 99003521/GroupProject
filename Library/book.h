@@ -13,7 +13,7 @@ class Book{
     Book(int,string,string,int,int);
     Book(int,string);
     void update();
-    void display();
+    string displayBook();
     string displayE();
     int getId();
     string getName();

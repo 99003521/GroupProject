@@ -14,15 +14,20 @@ namespace {
         // Output the text from the file
         cout << myText;
         }
-        vector<string> v;
+        vector<string> readL;
  
         stringstream ss(myText);
  
         while (ss.good()) {
             string substr;
             getline(ss, substr, ',');
-            v.push_back(substr);
+            readL.push_back(substr);
         }
+        cout<<"\n************\n";
+        for (int i=0;i<readL.size(); ++i){
+            cout<<(readL.at(i))<<"\n";
+        }
+        cout<<"\n************\n";
         MyReadFile.close();
 
         Book b1(1,"Book1");

@@ -1,7 +1,7 @@
 #Target_Name : Book
 #<TAB>Command
 PROJECT_NAME = book
-SRC = book.cpp test_bl.cpp library.cpp
+SRC = book.cpp testlib2.cpp library.cpp
 
 LIB = -lgtest -lgtest_main -lpthread
 
